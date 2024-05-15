@@ -1,0 +1,552 @@
+{
+    "Data": {
+        "FTX": {
+            "Is_disable": false,
+            "Path": "D:/FTXData",
+            "Start_time": "20211226_15",
+            "End_time": "20221224_23",
+            "Subscribe_symbols": [
+                "ETH-PERP_Order",
+                "ETH-PERP_Trade"
+            ]
+        },
+        "Okex": {
+            "Is_disable": false,
+            "Path": "D:/okexData",
+            "Start_time": "20211226_15",
+            "End_time": "20211226_17",
+            "Subscribe_symbols": [
+                "ETH-USDT-SWAP_Order",
+                "ETH-USDT-SWAP_Trade"
+            ]
+        },
+        "Binance": {
+            "Is_disable": false,
+            "Path": "D:/okexData",
+            "Start_time": "20211226_15",
+            "End_time": "20211226_17",
+            "Subscribe_symbols": [
+                "ethusdt_Order",
+                "ethusdt_Trade"
+            ]
+        },
+        "Dydx": {
+            "Is_disable": false,
+            "Path": "D:/okexData",
+            "Start_time": "20211226_15",
+            "End_time": "20211226_17",
+            "Subscribe_symbols": [
+                "ethusdt_Order",
+                "ethusdt_Trade"
+            ]
+        },
+        "Count":2
+    },
+    "Alpha": {
+        "FTX": {
+            "P": [
+                {
+                    "Name": "Nums",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Nums",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE000",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE001",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE002",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE002C",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE003",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE005",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE006",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE008",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE010",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE011",
+                    "Interval": 1000
+                },
+                {
+                    "Name": "QTE012",
+                    "Interval": 5
+                },
+                {
+                    "Name": "QTE013",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE014",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE015",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE017",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE018",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE019",
+                    "Interval": 3000
+                }
+            ]
+        },
+        "Okex": {
+            "P": [
+                {
+                    "Name": "Nums",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Nums",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE000",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE001",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE002",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE002C",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE003",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE005",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE006",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE008",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE009",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE010",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE011",
+                    "Interval": 1000
+                },
+                {
+                    "Name": "QTE012",
+                    "Interval": 5
+                },
+                {
+                    "Name": "QTE013",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE014",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE015",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE017",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE018",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE019",
+                    "Interval": 3000
+                }
+            ]
+        },
+        "Binance": {
+            "P": [
+                {
+                    "Name": "Nums",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Nums",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE000",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE001",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE002",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE002C",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE003",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE005",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE006",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE008",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE009",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE010",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE011",
+                    "Interval": 1000
+                },
+                {
+                    "Name": "QTE012",
+                    "Interval": 5
+                },
+                {
+                    "Name": "QTE013",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE014",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE015",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE017",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE018",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE019",
+                    "Interval": 3000
+                }
+            ]
+        },
+        "Dydx": {
+            "P": [
+                {
+                    "Name": "Nums",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Nums",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 300
+                },
+                {
+                    "Name": "Onside",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE000",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE001",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE002",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE002C",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE003",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE005",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE006",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 10
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 30
+                },
+                {
+                    "Name": "QTE007A",
+                    "Interval": 90
+                },
+                {
+                    "Name": "QTE008",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE009",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE010",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE011",
+                    "Interval": 1000
+                },
+                {
+                    "Name": "QTE012",
+                    "Interval": 5
+                },
+                {
+                    "Name": "QTE013",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE014",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE015",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE017",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE018",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "QTE019",
+                    "Interval": 3000
+                }
+            ]
+        }
+    },
+    "Trader":{
+        "Okex":{
+            "HftStrategyNames":["CRVYYDS", "WINTER"],
+            "HftStrategyParams":[
+                [
+                    {
+                        "Symbol":"BTC-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":1,
+                        "ThreExit":-1,
+                        "Size":0
+                    },
+                    {
+                        "Symbol":"CRV-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":1,
+                        "ThreExit":-1,
+                        "Size":0
+                    }
+                ],
+                [
+                    {
+                        "Symbol":"BTC-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":1,
+                        "ThreExit":-1,
+                        "Size":0
+                    },
+                    {
+                        "Symbol":"CRV-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":1,
+                        "ThreExit":-1,
+                        "Size":0
+                    }
+                ]
+            ],
+            "ArbitrageStrategyParams":[
+                {
+                    "SymbolArb1":"CRV-USDT",
+                    "SymbolArb2":"CRV-USDT-SWAP",
+                    "Interval":5,
+                    "Range":3
+                },
+                {
+                    "SymbolArb1":"DOGE-USDT",
+                    "SymbolArb2":"DOGE-USDT-SWAP",
+                    "Interval":5,
+                    "Range":3
+                }
+            ]
+        }
+    }
+}

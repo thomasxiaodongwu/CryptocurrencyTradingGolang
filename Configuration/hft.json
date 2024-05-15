@@ -1,0 +1,644 @@
+{
+    "Data": {
+        "FTX": {
+            "Is_disable": false,
+            "Path": "D:/FTXData",
+            "Start_time": "20211220_15",
+            "End_time": "20221224_23",
+            "Subscribe_symbols": [
+            ]
+        },
+        "Okex": {
+            "Is_disable": false,
+            "Path": "E:/okexData1",
+            "Start_time": "20220606_13",
+            "End_time": "20220613_23",
+            "Subscribe_symbols": [
+                "BTC-USDT-SWAP_Order",
+                "BTC-USDT-SWAP_Trade",
+                "ETH-USDT-SWAP_Order",
+                "ETH-USDT-SWAP_Trade",
+                "CRV-USDT-SWAP_Order",
+                "CRV-USDT-SWAP_Trade",
+                "AXS-USDT-SWAP_Order",
+                "AXS-USDT-SWAP_Trade",
+                "DOGE-USDT-SWAP_Order",
+                "DOGE-USDT-SWAP_Trade",
+                "FTM-USDT-SWAP_Order",
+                "FTM-USDT-SWAP_Trade",
+                "SAND-USDT-SWAP_Order",
+                "SAND-USDT-SWAP_Trade",
+                "LINK-USDT-SWAP_Order",
+                "LINK-USDT-SWAP_Trade",
+                "CELO-USDT-SWAP_Order",
+                "CELO-USDT-SWAP_Trade",
+                "SOL-USDT-SWAP_Order",
+                "SOL-USDT-SWAP_Trade",
+                "MATIC-USDT-SWAP_Order",
+                "MATIC-USDT-SWAP_Trade",
+                "LUNA-USDT-SWAP_Order",
+                "LUNA-USDT-SWAP_Trade",
+                "WAVES-USDT-SWAP_Order",
+                "WAVES-USDT-SWAP_Trade",
+                "OP-USDT-SWAP_Order",
+                "OP-USDT-SWAP_Trade",
+                "GMT-USDT-SWAP_Order",
+                "GMT-USDT-SWAP_Trade",
+                "ADA-USDT-SWAP_Order",
+                "ADA-USDT-SWAP_Trade",
+                "PEOPLE-USDT-SWAP_Order",
+                "PEOPLE-USDT-SWAP_Trade",
+                "TRX-USDT-SWAP_Order",
+                "TRX-USDT-SWAP_Trade",
+                "DOT-USDT-SWAP_Order",
+                "DOT-USDT-SWAP_Trade",
+                "LTC-USDT-SWAP_Order",
+                "LTC-USDT-SWAP_Trade",
+                "APE-USDT-SWAP_Order",
+                "APE-USDT-SWAP_Trade",
+                "ENS-USDT-SWAP_Order",
+                "ENS-USDT-SWAP_Trade",
+                "LOOKS-USDT-SWAP_Order",
+                "LOOKS-USDT-SWAP_Trade",
+                "AVAX-USDT-SWAP_Order",
+                "AVAX-USDT-SWAP_Trade",
+                "DYDX-USDT-SWAP_Order",
+                "DYDX-USDT-SWAP_Trade",
+                "GALA-USDT-SWAP_Order",
+                "GALA-USDT-SWAP_Trade"
+            ]
+        },
+        "Count":2
+    },
+    "Alpha": {
+        "FTX": {
+            "P": [
+                {
+                    "Name": "QTE000",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE001",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE002",
+                    "Interval": 0
+                }
+            ]
+        },
+        "Okex": {
+            "P": [
+                {
+                    "Name": "QTE000",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE001",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE002",
+                    "Interval": 0
+                },
+                {
+                    "Name": "QTE003",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE004",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "TRD000",
+                    "Interval": 15000
+                },
+                {
+                    "Name": "TRD001",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "TRD002",
+                    "Interval": 5
+                },
+                {
+                    "Name": "TRD003",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "TRD004",
+                    "Interval": 5000
+                },
+                {
+                    "Name": "TRD004",
+                    "Interval": 15000
+                },
+                {
+                    "Name": "TRD004",
+                    "Interval": 60000
+                },
+                {
+                    "Name": "TRD004",
+                    "Interval": 120000
+                },
+                {
+                    "Name": "QTE005",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE005",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE005",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE006",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE006",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE006",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE007",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE008",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE008",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE008",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE009",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE009",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE009",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE010",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE010",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE010",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE011",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE011",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE011",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE012",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE012",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE012",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE013",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE013",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE013",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE014",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE014",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE014",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE014A",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE014A",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE014A",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE014B",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE014B",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE014B",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE015",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE015",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE015",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE016",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE016",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE016",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE017",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE017",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE017",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE018",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE018",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE018",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE019",
+                    "Interval": 1000
+                },
+                {
+                    "Name": "QTE019",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE019",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE020",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE020",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE020",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE021",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE021",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE021",
+                    "Interval": 30000
+                },
+                {
+                    "Name": "QTE022",
+                    "Interval": 3000
+                },
+                {
+                    "Name": "QTE022",
+                    "Interval": 10000
+                },
+                {
+                    "Name": "QTE022",
+                    "Interval": 30000
+                }
+            ]
+        }
+    },
+    "Trader":{
+        "Okex":{
+            "HftStrategyNames":["WINTER"],
+            "HftStrategyParams":[
+                [
+                    {
+                        "Symbol":"BTC-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"ETH-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"CRV-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"AXS-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"DOGE-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"FTM-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"SAND-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"LINK-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"CELO-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"SOL-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"MATIC-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"LUNA-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"WAVES-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"OP-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"GMT-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"ADA-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"PEOPLE-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"TRX-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"DOT-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"LTC-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"APE-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"ENS-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"LOOKS-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"AVAX-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"DYDX-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    },
+                    {
+                        "Symbol":"GALA-USDT-SWAP",
+                        "SubSymbol":"ETH-USDT-SWAP",
+                        "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                        "ThreEnter":10,
+                        "ThreExit":-10,
+                        "Size":1
+                    }
+                ]
+            ],
+            "ArbitrageStrategyParams":[
+                {
+                    "SymbolArb1":"CRV-USDT",
+                    "SymbolArb2":"CRV-USDT-SWAP",
+                    "Interval":5,
+                    "Range":3
+                },
+                {
+                    "SymbolArb1":"DOGE-USDT",
+                    "SymbolArb2":"DOGE-USDT-SWAP",
+                    "Interval":5,
+                    "Range":3
+                }
+            ]
+        }
+    }
+}

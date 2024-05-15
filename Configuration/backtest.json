@@ -1,0 +1,818 @@
+{
+    "Data": {
+        "FTX": {
+            "Is_disable": false,
+            "Path": "D:/FTXData",
+            "Start_time": "20211226_15",
+            "End_time": "20221224_23",
+            "Subscribe_symbols": []
+        },
+        "Okex": {
+            "Is_disable": false,
+            "Path": "D:/studyfiles",
+            "Start_time": "20220606_13",
+            "End_time": "20220606_23",
+            "Subscribe_symbols": [
+                "BTC-USDT-SWAP_Order",
+                "BTC-USDT-SWAP_Trade",
+                "ETH-USDT-SWAP_Order",
+                "ETH-USDT-SWAP_Trade"
+            ]
+        },
+        "Count": 3
+    },
+    "Alpha": {
+        "FTX": {
+            "P": [
+                {
+                    "Name": "STA000",
+                    "Interval": 30000
+                }
+            ]
+        },
+        "Okex": {
+            "P": [
+                {
+                    "Name": "STA000",
+                    "Interval": 5000
+                }
+            ]
+        },
+        "Binance": {
+            "P": [
+                {
+                    "Name": "STA000",
+                    "Interval": 5000
+                }
+            ]
+        }
+    },
+    "Trader": {
+        "Okex": {
+            "HftStrategyNames": [
+                "hft"
+            ],
+            "HftStrategyParams": [
+                [
+                    {
+                        "Symbol": "AXS-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "FIL-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "RVN-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "DYDX-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "DOT-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ICP-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "YFII-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "UNI-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "LTC-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "COMP-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ENS-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "YFI-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "MKR-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ZEC-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "AVAX-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "KNC-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "KSM-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "AAVE-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ETH-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "DASH-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "EGLD-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "CRV-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "BTC-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "BADGER-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "LINK-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "OP-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "GMT-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "XMR-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "TORN-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "BAL-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "TRB-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "UMA-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "DORA-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ETC-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "LUNA-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "SOL-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "APE-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ATOM-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "BCH-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "XCH-USDT-SWAP",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    }
+                ]
+            ],
+            "ArbitrageStrategyParams": [
+                {
+                    "SymbolArb1": "CRV-USDT",
+                    "SymbolArb2": "CRV-USDT-SWAP",
+                    "Interval": 5,
+                    "Range": 3
+                },
+                {
+                    "SymbolArb1": "DOGE-USDT",
+                    "SymbolArb2": "DOGE-USDT-SWAP",
+                    "Interval": 5,
+                    "Range": 3
+                }
+            ]
+        },
+        "Binance": {
+            "HftStrategyNames": [
+                "hft"
+            ],
+            "HftStrategyParams": [
+                [
+                    {
+                        "Symbol": "axsusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "filusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "rvnusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "dydxusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "dotusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "icpusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "yfiiusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "uniusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ltcusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "compusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ensusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "yfiusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "mkrusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "zecusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "avaxusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "kncusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ksmusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "aaveusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "ethusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "dashusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "egldusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "crvusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "btcusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "badgerusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "linkusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "opusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "gmtusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "xmrusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "tornusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "balusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "trbusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "umausdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "dorausdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "etcusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "lunausdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "solusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "apeusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "atomusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "bchusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    },
+                    {
+                        "Symbol": "xchusdt",
+                        "SubSymbol": "",
+                        "Weights": [],
+                        "SubWeights": [],
+                        "ThreEnter": 5.77,
+                        "ThreExit": -5.77,
+                        "Size": 0
+                    }
+                ]
+            ],
+            "ArbitrageStrategyParams": [
+                {
+                    "SymbolArb1": "CRV-USDT",
+                    "SymbolArb2": "CRV-USDT-SWAP",
+                    "Interval": 5,
+                    "Range": 3
+                },
+                {
+                    "SymbolArb1": "DOGE-USDT",
+                    "SymbolArb2": "DOGE-USDT-SWAP",
+                    "Interval": 5,
+                    "Range": 3
+                }
+            ]
+        }
+    }
+}

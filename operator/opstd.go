@@ -1,0 +1,104 @@
+/*
+ * @Author: xwu
+ * @Date: 2021-12-26 18:43:43
+ * @Last Modified by: xwu
+ * @Last Modified time: 2022-02-26 21:38:10
+ */
+package operator
+
+import (
+	"math"
+	"winter/container"
+	"winter/mathpro"
+)
+
+type PointStd struct {
+	Data     *container.RingBufferFloat64
+	Interval int64
+	Sum_     float64
+	Sum2_    float64
+	result_  float64
+}
+
+func (op *PointStd) Init(interval int64) {
+	op.Data = container.NewRingBufferFloat64(interval)
+	op.Interval = interval
+	op.Sum_ = 0
+	op.Sum2_ = 0
+}
+
+// x, x2
+func (op *PointStd) Update(time int64, x float64) float64 {
+	// 剔除头部应该去掉的
+	if op.Data.Full() {
+		old_v := op.Data.Front()
+		op.Sum_ -= old_v
+		op.Sum2_ -= old_v * old_v
+	}
+
+	// 增加新的元素
+	op.Data.Push_back(x)
+	op.Sum_ += x
+	op.Sum2_ += x * x
+
+	// sqrtf((sum2 - sum * sum / (float) count) / (float) (count - 1));
+	// 返回链表的第一个元素
+	var n float64 = float64(op.Data.Len())
+	op.result_ = math.Sqrt((op.Sum2_ - op.Sum_*op.Sum_/n) / (n - 1))
+	if !mathpro.Isfinite(op.result_) {
+		op.result_ = 0
+	}
+	return op.result_
+}
+
+func (op *PointStd) Value() float64 {
+	return op.result_
+}
+
+type TimeStd struct {
+	Data     []valueTm
+	Interval int64
+	Sum_     float64
+	Sum2_    float64
+	result_  float64
+}
+
+func (op *TimeStd) Init(interval int64) {
+	op.Interval = interval
+	op.Sum_ = 0
+	op.Sum2_ = 0
+	op.result_ = 0
+}
+
+// x, x2
+func (op *TimeStd) Update(time int64, x float64) float64 {
+	new_value := valueTm{Tm: time, Value: x}
+
+	// 剔除头部应该去掉的
+	var i int = 0
+	for i < len(op.Data) && time-op.Data[i].Tm > op.Interval {
+		old_v := op.Data[i].Value
+		op.Sum_ -= old_v
+		op.Sum2_ -= old_v * old_v
+		i += 1
+	}
+
+	// 增加新的元素
+	op.Data = append(op.Data[i:], new_value)
+	op.Sum_ += x
+	op.Sum2_ += x * x
+
+	n := float64(len(op.Data))
+
+	// sqrtf((sum2 - sum * sum / (float) count) / (float) (count - 1));
+	// 返回链表的第一个元素
+	op.result_ = math.Sqrt((op.Sum2_ - op.Sum_*op.Sum_/n) / (n - 1))
+	if !mathpro.Isfinite(op.result_) {
+		op.result_ = 0
+	}
+	return op.result_
+}
+
+func (op *TimeStd) Value() float64 {
+	return op.result_
+}

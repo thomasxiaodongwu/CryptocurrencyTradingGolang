@@ -1,0 +1,190 @@
+{
+   "Data": {
+       "FTX": {
+           "Is_disable": false,
+           "Path":"D:/FTXData",
+           "Start_time":"20211226_15",
+           "End_time":"20221224_23",
+           "Subscribe_symbols": [
+               "ETH-PERP_Order"
+            ]
+        },
+       "Okex": {
+           "Is_disable": false,
+           "Path":"D:/okexData",
+           "Start_time":"20211226_15",
+           "End_time":"20211226_17",
+           "Subscribe_symbols": [
+               "BTC-USDT-SWAP_Order",
+               "BTC-USDT-SWAP_Trade",
+               "ETH-USDT-SWAP_Order",
+               "ETH-USDT-SWAP_Trade",
+               "YFI-USDT-SWAP_Order",
+               "YFI-USDT-SWAP_Trade",
+               "YFII-USDT-SWAP_Order",
+               "YFII-USDT-SWAP_Trade",
+               "LUNA-USDT-SWAP_Order",
+               "LUNA-USDT-SWAP_Trade",
+               "ICP-USDT-SWAP_Order",
+               "ICP-USDT-SWAP_Trade",
+               "FIL-USDT-SWAP_Order",
+               "FIL-USDT-SWAP_Trade",
+               "APE-USDT-SWAP_Order",
+               "APE-USDT-SWAP_Trade",
+               "TORN-USDT-SWAP_Order",
+               "TORN-USDT-SWAP_Trade",
+               "BCH-USDT-SWAP_Order",
+               "BCH-USDT-SWAP_Trade",
+               "AAVE-USDT-SWAP_Order",
+               "AAVE-USDT-SWAP_Trade",
+               "ENS-USDT-SWAP_Order",
+               "ENS-USDT-SWAP_Trade",
+               "LTC-USDT-SWAP_Order",
+               "LTC-USDT-SWAP_Trade",
+               "TRB-USDT-SWAP_Order",
+               "TRB-USDT-SWAP_Trade",
+               "XMR-USDT-SWAP_Order",
+               "XMR-USDT-SWAP_Trade",
+               "MKR-USDT-SWAP_Order",
+               "MKR-USDT-SWAP_Trade",
+               "AXS-USDT-SWAP_Order",
+               "AXS-USDT-SWAP_Trade",
+               "COMP-USDT-SWAP_Order",
+               "COMP-USDT-SWAP_Trade",
+               "SOL-USDT-SWAP_Order",
+               "SOL-USDT-SWAP_Trade",
+               "XCH-USDT-SWAP_Order",
+               "XCH-USDT-SWAP_Trade",
+               "ATOM-USDT-SWAP_Order",
+               "ATOM-USDT-SWAP_Trade",
+               "OP-USDT-SWAP_Order",
+               "OP-USDT-SWAP_Trade",
+               "ZEC-USDT-SWAP_Order",
+               "ZEC-USDT-SWAP_Trade",
+               "ETC-USDT-SWAP_Order",
+               "ETC-USDT-SWAP_Trade",
+               "DASH-USDT-SWAP_Order",
+               "DASH-USDT-SWAP_Trade",
+               "KSM-USDT-SWAP_Order",
+               "KSM-USDT-SWAP_Trade",
+               "EGLD-USDT-SWAP_Order",
+               "EGLD-USDT-SWAP_Trade",
+               "BAL-USDT-SWAP_Order",
+               "BAL-USDT-SWAP_Trade",
+               "DOT-USDT-SWAP_Order",
+               "DOT-USDT-SWAP_Trade",
+               "BADGER-USDT-SWAP_Order",
+               "BADGER-USDT-SWAP_Trade",
+               "UMA-USDT-SWAP_Order",
+               "UMA-USDT-SWAP_Trade",
+               "LINK-USDT-SWAP_Order",
+               "LINK-USDT-SWAP_Trade",
+               "AVAX-USDT-SWAP_Order",
+               "AVAX-USDT-SWAP_Trade",
+               "CRV-USDT-SWAP_Order",
+               "CRV-USDT-SWAP_Trade",
+               "UNI-USDT-SWAP_Order",
+               "UNI-USDT-SWAP_Trade",
+               "KNC-USDT-SWAP_Order",
+               "KNC-USDT-SWAP_Trade",
+               "RVN-USDT-SWAP_Order",
+               "RVN-USDT-SWAP_Trade",
+               "DORA-USDT-SWAP_Order",
+               "DORA-USDT-SWAP_Trade",
+               "DYDX-USDT-SWAP_Order",
+               "DYDX-USDT-SWAP_Trade",
+               "GMT-USDT-SWAP_Order",
+               "GMT-USDT-SWAP_Trade"
+            ]
+        },
+       "Binance": {
+           "Is_disable": false,
+           "Path":"D:/okexData",
+           "Start_time":"20211226_15",
+           "End_time":"20211226_17",
+           "Subscribe_symbols": [
+               "btcusdt_Order","btcusdt_Trade","ethusdt_Order","ethusdt_Trade","yfiusdt_Order","yfiusdt_Trade","yfiiusdt_Order","yfiiusdt_Trade","lunausdt_Order","lunausdt_Trade","icpusdt_Order","icpusdt_Trade","filusdt_Order","filusdt_Trade","apeusdt_Order","apeusdt_Trade","tornusdt_Order","tornusdt_Trade","bchusdt_Order","bchusdt_Trade","aaveusdt_Order","aaveusdt_Trade","ensusdt_Order","ensusdt_Trade","ltcusdt_Order","ltcusdt_Trade","trbusdt_Order","trbusdt_Trade","xmrusdt_Order","xmrusdt_Trade","mkrusdt_Order","mkrusdt_Trade","axsusdt_Order","axsusdt_Trade","compusdt_Order","compusdt_Trade","solusdt_Order","solusdt_Trade","xchusdt_Order","xchusdt_Trade","atomusdt_Order","atomusdt_Trade","opusdt_Order","opusdt_Trade","zecusdt_Order","zecusdt_Trade","etcusdt_Order","etcusdt_Trade","dashusdt_Order","dashusdt_Trade","ksmusdt_Order","ksmusdt_Trade","egldusdt_Order","egldusdt_Trade","balusdt_Order","balusdt_Trade","dotusdt_Order","dotusdt_Trade","badgerusdt_Order","badgerusdt_Trade","umausdt_Order","umausdt_Trade","linkusdt_Order","linkusdt_Trade","avaxusdt_Order","avaxusdt_Trade","crvusdt_Order","crvusdt_Trade","uniusdt_Order","uniusdt_Trade","kncusdt_Order","kncusdt_Trade","rvnusdt_Order","rvnusdt_Trade","dorausdt_Order","dorausdt_Trade","dydxusdt_Order","dydxusdt_Trade","gmtusdt_Order","gmtusdt_Trade"
+            ]
+        },
+       "Count":3
+    },
+   "Alpha": {
+       "FTX": {
+           "P": [
+                {
+                   "Name":"ARB001",
+                   "Interval": 1000
+                }
+            ]
+        },
+       "Okex": {
+           "P": [
+                {
+                   "Name":"ARB001",
+                   "Interval": 1000
+                }
+            ]
+        }
+    },
+   "Trader":{
+       "Okex":{
+           "HftStrategyNames":["CRVYYDS","WINTER"],
+           "HftStrategyParams":[
+                [
+                    {
+                       "Symbol":"BTC-USDT-SWAP",
+                       "SubSymbol":"ETH-USDT-SWAP",
+                       "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "ThreEnter":1,
+                       "ThreExit":-1,
+                       "Size":0
+                    },
+                    {
+                       "Symbol":"CRV-USDT-SWAP",
+                       "SubSymbol":"ETH-USDT-SWAP",
+                       "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "ThreEnter":1,
+                       "ThreExit":-1,
+                       "Size":0
+                    }
+                ],
+                [
+                    {
+                       "Symbol":"BTC-USDT-SWAP",
+                       "SubSymbol":"ETH-USDT-SWAP",
+                       "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "ThreEnter":1,
+                       "ThreExit":-1,
+                       "Size":0
+                    },
+                    {
+                       "Symbol":"CRV-USDT-SWAP",
+                       "SubSymbol":"ETH-USDT-SWAP",
+                       "Weights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "SubWeights":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                       "ThreEnter":1,
+                       "ThreExit":-1,
+                       "Size":0
+                    }
+                ]
+            ],
+           "ArbitrageStrategyParams":[
+                {
+                   "SymbolArb1":"CRV-USDT",
+                   "SymbolArb2":"CRV-USDT-SWAP",
+                   "Interval":5,
+                   "Range":3
+                },
+                {
+                   "SymbolArb1":"DOGE-USDT",
+                   "SymbolArb2":"DOGE-USDT-SWAP",
+                   "Interval":5,
+                   "Range":3
+                }
+            ]
+        }
+    }
+}

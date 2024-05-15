@@ -1,0 +1,509 @@
+/*
+ * @Author: xwu
+ * @Date: 2022-10-12 22:56:57
+ * @Last Modified by: xwu
+ * @Last Modified time: 2022-10-12 23:28:27
+ */
+package rbtree
+
+import "fmt"
+
+// Tree holds elements of the red-black tree
+type TreeGeneric[K int | string, V any] struct {
+	Root *NodeGeneric[K, V]
+	size int
+}
+
+// Node is a single element within the treev
+type NodeGeneric[K int | string, V any] struct {
+	Key    K
+	Value  V
+	color  color
+	Left   *NodeGeneric[K, V]
+	Right  *NodeGeneric[K, V]
+	Parent *NodeGeneric[K, V]
+}
+
+// NewWith instantiates a red-black tree with the custom comparator.
+func NewRBTreeGeneric[K int | string, V any]() TreeGeneric[K, V] {
+	return TreeGeneric[K, V]{}
+}
+
+// Put inserts node into the tree.
+// Key should adhere to the comparator's type assertion, otherwise method panics.
+func (tree *TreeGeneric[K, V]) Put(key K, value V) {
+	var insertedNode *NodeGeneric[K, V]
+	newNode := &NodeGeneric[K, V]{Key: key, Value: value, color: red}
+
+	if tree.Root == nil {
+		tree.Root = newNode
+		insertedNode = tree.Root
+	} else {
+		node := tree.Root
+		loop := true
+		for loop {
+			if key == node.Key {
+				node.Key = key
+				node.Value = value
+				return
+			} else if key < node.Key {
+				if node.Left == nil {
+					node.Left = newNode
+					insertedNode = node.Left
+					loop = false
+				} else {
+					node = node.Left
+				}
+			} else if key > node.Key {
+				if node.Right == nil {
+					node.Right = newNode
+					insertedNode = node.Right
+					loop = false
+				} else {
+					node = node.Right
+				}
+			}
+		}
+		insertedNode.Parent = node
+
+	}
+
+	tree.insertCase1(insertedNode)
+	tree.size++
+}
+
+// Get searches the node in the tree by key and returns its value or nil if key is not found in tree.
+// Second return parameter is true if key was found, otherwise false.
+// Key should adhere to the comparator's type assertion, otherwise method panics.
+func (tree *TreeGeneric[K, V]) Get(key K) (value V, found bool) {
+	node := tree.lookup(key)
+	if node != nil {
+		return node.Value, true
+	}
+	return value, false
+}
+
+func (tree *TreeGeneric[K, V]) Remove(key K) {
+	var child *NodeGeneric[K, V]
+	node := tree.lookup(key)
+	if node == nil {
+		return
+	}
+	if node.Left != nil && node.Right != nil {
+		pred := node.Left.maximumNode()
+		node.Key = pred.Key
+		node.Value = pred.Value
+		node = pred
+	}
+	if node.Left == nil || node.Right == nil {
+		if node.Right == nil {
+			child = node.Left
+		} else {
+			child = node.Right
+		}
+		if node.color == black {
+			node.color = nodeColorGeneric(child)
+			tree.deleteCase1(node)
+		}
+		tree.replaceNode(node, child)
+		if node.Parent == nil && child != nil {
+			child.color = black
+		}
+	}
+	tree.size--
+}
+
+// Empty returns true if tree does not contain any nodes
+func (tree *TreeGeneric[K, V]) Empty() bool {
+	return tree.size == 0
+}
+
+// Size returns number of nodes in the tree.
+func (tree *TreeGeneric[K, V]) Size() int {
+	return tree.size
+}
+
+// Size returns the number of elements stored in the subtree.
+// Computed dynamically on each call, i.e. the subtree is traversed to count the number of the nodes.
+func (node *NodeGeneric[K, V]) Size() int {
+	if node == nil {
+		return 0
+	}
+	size := 1
+	if node.Left != nil {
+		size += node.Left.Size()
+	}
+	if node.Right != nil {
+		size += node.Right.Size()
+	}
+	return size
+}
+
+// Keys returns all keys in-order
+func (tree *TreeGeneric[K, V]) Keys() []K {
+	keys := make([]K, tree.size)
+	it := tree.Iterator()
+	for i := 0; it.Next(); i++ {
+		keys[i] = it.Key()
+	}
+	return keys
+}
+
+// // Values returns all values in-order based on the key.
+// func (tree *Tree) Values() []interface{} {
+// 	values := make([]interface{}, tree.size)
+// 	it := tree.Iterator()
+// 	for i := 0; it.Next(); i++ {
+// 		values[i] = it.Value()
+// 	}
+// 	return values
+// }
+
+// Left returns the left-most (min) node or nil if tree is empty.
+func (tree *TreeGeneric[K, V]) Left() *NodeGeneric[K, V] {
+	var parent *NodeGeneric[K, V]
+	current := tree.Root
+	for current != nil {
+		parent = current
+		current = current.Left
+	}
+	return parent
+}
+
+// Right returns the right-most (max) node or nil if tree is empty.
+func (tree *TreeGeneric[K, V]) Right() *NodeGeneric[K, V] {
+	var parent *NodeGeneric[K, V]
+	current := tree.Root
+	for current != nil {
+		parent = current
+		current = current.Right
+	}
+	return parent
+}
+
+// Floor Finds floor node of the input key, return the floor node or nil if no floor is found.
+// Second return parameter is true if floor was found, otherwise false.
+//
+// Floor node is defined as the largest node that is smaller than or equal to the given node.
+// A floor node may not be found, either because the tree is empty, or because
+// all nodes in the tree are larger than the given node.
+//
+// Key should adhere to the comparator's type assertion, otherwise method panics.
+func (tree *TreeGeneric[K, V]) Floor(key K) (floor *NodeGeneric[K, V], found bool) {
+	found = false
+	node := tree.Root
+	for node != nil {
+		if key == node.Key {
+			return node, true
+		} else if key < node.Key {
+			node = node.Left
+		} else {
+			floor, found = node, true
+			node = node.Right
+		}
+	}
+	if found {
+		return floor, true
+	}
+	return nil, false
+}
+
+// Ceiling finds ceiling node of the input key, return the ceiling node or nil if no ceiling is found.
+// Second return parameter is true if ceiling was found, otherwise false.
+//
+// Ceiling node is defined as the smallest node that is larger than or equal to the given node.
+// A ceiling node may not be found, either because the tree is empty, or because
+// all nodes in the tree are smaller than the given node.
+//
+// Key should adhere to the comparator's type assertion, otherwise method panics.
+func (tree *TreeGeneric[K, V]) Ceiling(key K) (ceiling *NodeGeneric[K, V], found bool) {
+	found = false
+	node := tree.Root
+	for node != nil {
+		if key == node.Key {
+			return node, true
+		} else if key < node.Key {
+			ceiling, found = node, true
+			node = node.Left
+		} else {
+			node = node.Right
+		}
+	}
+	if found {
+		return ceiling, true
+	}
+	return nil, false
+}
+
+// Clear removes all nodes from the tree.
+func (tree *TreeGeneric[K, V]) Clear() {
+	tree.Root = nil
+	tree.size = 0
+}
+
+// String returns a string representation of container
+func (tree *TreeGeneric[K, V]) String() string {
+	str := "RedBlackTree\n"
+	if !tree.Empty() {
+		outputGeneric(tree.Root, "", true, &str)
+	}
+	return str
+}
+
+func (node *NodeGeneric[K, V]) String() string {
+	return fmt.Sprintf("%v", node.Key)
+}
+
+func OPGeneric[K int | string, V any](node *NodeGeneric[K, V], prefix string, isTail bool, str *string) {
+	outputGeneric(node, prefix, isTail, str)
+}
+
+func outputGeneric[K int | string, V any](node *NodeGeneric[K, V], prefix string, isTail bool, str *string) {
+	if node.Right != nil {
+		newPrefix := prefix
+		if isTail {
+			newPrefix += "│   "
+		} else {
+			newPrefix += "    "
+		}
+		outputGeneric(node.Right, newPrefix, false, str)
+	}
+	*str += prefix
+	if isTail {
+		*str += "└── "
+	} else {
+		*str += "┌── "
+	}
+	*str += node.String() + "\n"
+	if node.Left != nil {
+		newPrefix := prefix
+		if isTail {
+			newPrefix += "    "
+		} else {
+			newPrefix += "│   "
+		}
+		outputGeneric(node.Left, newPrefix, true, str)
+	}
+}
+
+func (tree *TreeGeneric[K, V]) lookup(key K) *NodeGeneric[K, V] {
+	node := tree.Root
+	for node != nil {
+		if key == node.Key {
+			return node
+		} else if key < node.Key {
+			node = node.Left
+		} else {
+			node = node.Right
+		}
+	}
+	return nil
+}
+
+func (node *NodeGeneric[K, V]) grandparent() *NodeGeneric[K, V] {
+	if node != nil && node.Parent != nil {
+		return node.Parent.Parent
+	}
+	return nil
+}
+
+func (node *NodeGeneric[K, V]) uncle() *NodeGeneric[K, V] {
+	if node == nil || node.Parent == nil || node.Parent.Parent == nil {
+		return nil
+	}
+	return node.Parent.sibling()
+}
+
+func (node *NodeGeneric[K, V]) sibling() *NodeGeneric[K, V] {
+	if node == nil || node.Parent == nil {
+		return nil
+	}
+	if node == node.Parent.Left {
+		return node.Parent.Right
+	}
+	return node.Parent.Left
+}
+
+func (tree *TreeGeneric[K, V]) rotateLeft(node *NodeGeneric[K, V]) {
+	right := node.Right
+	tree.replaceNode(node, right)
+	node.Right = right.Left
+	if right.Left != nil {
+		right.Left.Parent = node
+	}
+	right.Left = node
+	node.Parent = right
+}
+
+func (tree *TreeGeneric[K, V]) rotateRight(node *NodeGeneric[K, V]) {
+	left := node.Left
+	tree.replaceNode(node, left)
+	node.Left = left.Right
+	if left.Right != nil {
+		left.Right.Parent = node
+	}
+	left.Right = node
+	node.Parent = left
+}
+
+func (tree *TreeGeneric[K, V]) replaceNode(old *NodeGeneric[K, V], new *NodeGeneric[K, V]) {
+	if old.Parent == nil {
+		tree.Root = new
+	} else {
+		if old == old.Parent.Left {
+			old.Parent.Left = new
+		} else {
+			old.Parent.Right = new
+		}
+	}
+	if new != nil {
+		new.Parent = old.Parent
+	}
+}
+
+func (tree *TreeGeneric[K, V]) insertCase1(node *NodeGeneric[K, V]) {
+	if node.Parent == nil {
+		node.color = black
+	} else {
+		tree.insertCase2(node)
+	}
+}
+
+func (tree *TreeGeneric[K, V]) insertCase2(node *NodeGeneric[K, V]) {
+	if nodeColorGeneric(node.Parent) == black {
+		return
+	}
+	tree.insertCase3(node)
+}
+
+func (tree *TreeGeneric[K, V]) insertCase3(node *NodeGeneric[K, V]) {
+	uncle := node.uncle()
+	if nodeColorGeneric(uncle) == red {
+		node.Parent.color = black
+		uncle.color = black
+		node.grandparent().color = red
+		tree.insertCase1(node.grandparent())
+	} else {
+		tree.insertCase4(node)
+	}
+}
+
+func (tree *TreeGeneric[K, V]) insertCase4(node *NodeGeneric[K, V]) {
+	grandparent := node.grandparent()
+	if node == node.Parent.Right && node.Parent == grandparent.Left {
+		tree.rotateLeft(node.Parent)
+		node = node.Left
+	} else if node == node.Parent.Left && node.Parent == grandparent.Right {
+		tree.rotateRight(node.Parent)
+		node = node.Right
+	}
+	tree.insertCase5(node)
+}
+
+func (tree *TreeGeneric[K, V]) insertCase5(node *NodeGeneric[K, V]) {
+	node.Parent.color = black
+	grandparent := node.grandparent()
+	grandparent.color = red
+	if node == node.Parent.Left && node.Parent == grandparent.Left {
+		tree.rotateRight(grandparent)
+	} else if node == node.Parent.Right && node.Parent == grandparent.Right {
+		tree.rotateLeft(grandparent)
+	}
+}
+
+func (node *NodeGeneric[K, V]) maximumNode() *NodeGeneric[K, V] {
+	if node == nil {
+		return nil
+	}
+	for node.Right != nil {
+		node = node.Right
+	}
+	return node
+}
+
+func (tree *TreeGeneric[K, V]) deleteCase1(node *NodeGeneric[K, V]) {
+	if node.Parent == nil {
+		return
+	}
+	tree.deleteCase2(node)
+}
+
+func (tree *TreeGeneric[K, V]) deleteCase2(node *NodeGeneric[K, V]) {
+	sibling := node.sibling()
+	if nodeColorGeneric(sibling) == red {
+		node.Parent.color = red
+		sibling.color = black
+		if node == node.Parent.Left {
+			tree.rotateLeft(node.Parent)
+		} else {
+			tree.rotateRight(node.Parent)
+		}
+	}
+	tree.deleteCase3(node)
+}
+
+func (tree *TreeGeneric[K, V]) deleteCase3(node *NodeGeneric[K, V]) {
+	sibling := node.sibling()
+	if nodeColorGeneric(node.Parent) == black &&
+		nodeColorGeneric(sibling) == black &&
+		nodeColorGeneric(sibling.Left) == black &&
+		nodeColorGeneric(sibling.Right) == black {
+		sibling.color = red
+		tree.deleteCase1(node.Parent)
+	} else {
+		tree.deleteCase4(node)
+	}
+}
+
+func (tree *TreeGeneric[K, V]) deleteCase4(node *NodeGeneric[K, V]) {
+	sibling := node.sibling()
+	if nodeColorGeneric(node.Parent) == red &&
+		nodeColorGeneric(sibling) == black &&
+		nodeColorGeneric(sibling.Left) == black &&
+		nodeColorGeneric(sibling.Right) == black {
+		sibling.color = red
+		node.Parent.color = black
+	} else {
+		tree.deleteCase5(node)
+	}
+}
+
+func (tree *TreeGeneric[K, V]) deleteCase5(node *NodeGeneric[K, V]) {
+	sibling := node.sibling()
+	if node == node.Parent.Left &&
+		nodeColorGeneric(sibling) == black &&
+		nodeColorGeneric(sibling.Left) == red &&
+		nodeColorGeneric(sibling.Right) == black {
+		sibling.color = red
+		sibling.Left.color = black
+		tree.rotateRight(sibling)
+	} else if node == node.Parent.Right &&
+		nodeColorGeneric(sibling) == black &&
+		nodeColorGeneric(sibling.Right) == red &&
+		nodeColorGeneric(sibling.Left) == black {
+		sibling.color = red
+		sibling.Right.color = black
+		tree.rotateLeft(sibling)
+	}
+	tree.deleteCase6(node)
+}
+
+func (tree *TreeGeneric[K, V]) deleteCase6(node *NodeGeneric[K, V]) {
+	sibling := node.sibling()
+	sibling.color = nodeColorGeneric(node.Parent)
+	node.Parent.color = black
+	if node == node.Parent.Left && nodeColorGeneric(sibling.Right) == red {
+		sibling.Right.color = black
+		tree.rotateLeft(node.Parent)
+	} else if nodeColorGeneric(sibling.Left) == red {
+		sibling.Left.color = black
+		tree.rotateRight(node.Parent)
+	}
+}
+
+func nodeColorGeneric[K int | string, V any](node *NodeGeneric[K, V]) color {
+	if node == nil {
+		return black
+	}
+	return node.color
+}
